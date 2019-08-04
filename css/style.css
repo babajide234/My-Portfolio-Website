@@ -1,4 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
+  box-sizing: border-box;
+  padding: 3rem;
   background: linear-gradient(to top, #7b00e0, #ff006a);
   margin: 0;
   height: 100vh;
@@ -79,10 +91,10 @@ body {
   position: relative;
   margin-top: 3.5rem; }
   .navigation__icon, .navigation__icon::after, .navigation__icon::before {
-    width: 3.5rem;
-    height: 11px;
+    width: 4rem;
+    height: 8px;
     border-radius: 5px;
-    background-color: #070707;
+    background-color: rgba(7, 7, 7, 0.308);
     display: inline-block; }
   .navigation__icon::after, .navigation__icon::before {
     content: "";

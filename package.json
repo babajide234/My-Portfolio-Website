@@ -4,11 +4,15 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass scss/style.scss css/style.css -w"
+    "compile:sass": "node-sass scss/style.scss css/style.css -w"
   },
   "author": "babajide tomoshegbo",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "graphql": "^14.4.2",
+    "particles.js": "^2.0.0"
   }
 }
