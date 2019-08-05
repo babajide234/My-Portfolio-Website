@@ -10,8 +10,6 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
-  background: linear-gradient(to top, #7b00e0, #ff006a);
   margin: 0;
   height: 100vh;
   overflow: hidden; }
@@ -94,7 +92,7 @@ body {
     width: 4rem;
     height: 8px;
     border-radius: 5px;
-    background-color: rgba(7, 7, 7, 0.308);
+    background-color: rgba(7, 7, 7, 0.698);
     display: inline-block; }
   .navigation__icon::after, .navigation__icon::before {
     content: "";
@@ -129,3 +127,7 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
   transform: rotate(135deg); }
+
+#particles-js {
+  height: 100vh;
+  background: linear-gradient(to top, #7b00e0, #ff006a); }
