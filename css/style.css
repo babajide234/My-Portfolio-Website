@@ -80,8 +80,8 @@ body {
   @media (min-width: 768px) {
     .header .social {
       position: absolute;
-      top: 108rem;
-      left: 7.5rem;
+      top: 110rem;
+      left: 8rem;
       z-index: 3; } }
   .header .social__list {
     list-style-type: none; }
