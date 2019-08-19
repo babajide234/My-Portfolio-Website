@@ -4,13 +4,31 @@
     position:relative;
     background-image: linear-gradient(to right top, #1a1a1d, #252529, #313136, #3d3d43, #4a4a50);
     .social{
-        &__list{
-            list-style-type: none;
-            &__item{
-                text-decoration: none;
-                font-size: 10rem;
-            }
+        
+        @include breakpoint(sm){
+            position: absolute;
+            top:108rem;
+            left: 7.5rem;
+            z-index: 3;
         }
+            &__list{
+                list-style-type: none;
+            }
+            &__item{
+                display: inline-block;
+                margin: 10px;
+            }
+            &__link{
+                color:$tetiary;
+                @include breakpoint(sm){
+                   font-size: 7rem;
+                   margin-left: 3rem;
+                }
+            }
+            &__link:hover{
+                color: $tetiary3;
+                transform: scale(1.2);
+            }
 
     }
 }
