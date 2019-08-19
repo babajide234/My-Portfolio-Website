@@ -1,5 +1,11 @@
 #particles-js{
-    
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
-    background: linear-gradient(to top, $purple, $pink);
+    width: 100%;
+    background-image: linear-gradient(to right top, #1a1a1d, #252529, #313136, #3d3d43, #4a4a50);
+    z-index: 1;
+    background: transparent;
+
 }

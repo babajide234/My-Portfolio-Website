@@ -7,32 +7,30 @@
     }
 
     &__button{
-        background-color: $yellow;
-        height: 8rem;
-        width: 8rem;
+        background-color: $tetiary3;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
         position: fixed;
         top: 2rem;
         right: 2rem;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(#000, .1);
+        box-shadow: 0 1rem 3rem rgba($primary, .1);
         text-align: center;
         cursor: pointer;
     }
 
     &__background{
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
         position: fixed;
         top: 2.5rem;
         right: 2.5rem;  
-        
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86,0,0.07,1);
-        background-image: radial-gradient( );
+        background-image: radial-gradient(circle, #c3073f, #b80540, #ac0441, #a10541, #950740);
         z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86,0,0.07,1);
     }
 
     &__nav{
@@ -89,13 +87,13 @@
 
     &__icon{
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 2.8rem;
 
         &,
         &::after,
         &::before{
-            width: 4rem;
-            height: 8px;
+            width: 3rem;
+            height: 4px;
             border-radius: 5px;
             background-color: rgba(7, 7, 7, 0.698);
             display: inline-block;
@@ -107,16 +105,16 @@
             left: 0;
             transition: all .2s;
         }
-        &::after{top: -1.3rem;}
-        &::before{top: 1.3rem;}
+        &::after{top: -1rem;}
+        &::before{top: 1rem;}
     }
 
     &__button:hover &__icon::before{
-        top: 1rem;
+        top: .8rem;
     }
 
     &__button:hover &__icon::after{
-        top: -1rem;
+        top: -.8rem;
     }
 
     &__checkbox:checked ~ &__background {
