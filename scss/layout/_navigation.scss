@@ -18,19 +18,6 @@
         box-shadow: 0 1rem 3rem rgba($primary, .1);
         text-align: center;
         cursor: pointer;
-        @include breakpoint(xs){
-            height: 10rem;
-            width: 10rem;
-            top: 3rem;
-            right: 3rem;
-           
-        }
-        @include breakpoint(sm){
-            height: 18rem;
-            width: 18rem;
-            top: 6rem;
-            right:6rem;
-        }
     }
 
     &__background{
@@ -45,12 +32,6 @@
         background-image: radial-gradient(circle, #c3073f, #b80540, #ac0441, #a10541, #950740);
         z-index: 1000;
         
-        @include breakpoint(sm){
-            height: 15rem;
-            width: 15rem;
-            top: 7rem;
-            right: 7rem;  
-        }
     }
 
     &__nav{
@@ -108,21 +89,16 @@
     &__icon{
         position: relative;
         margin-top: 2.8rem;
-        @include breakpoint(sm){
-            margin-top: 9rem;
-        }
+       
         &,
         &::after,
         &::before{
             width: 3rem;
             height: 4px;
             border-radius: 5px;
-            background-color: rgba(7, 7, 7, 0.698);
+            background-color: $primary;
             display: inline-block;
-            @include breakpoint(sm){
-                width: 8rem;
-                height: 10px;
-            }
+            
         }
         &::after,
         &::before{
@@ -134,30 +110,22 @@
         }
         &::after{
             top: -1rem;
-            @include breakpoint(sm){
-                top: -3rem;
-            }
+            
         }
         &::before{
             top: 1rem;
-            @include breakpoint(sm){
-                top: 3rem;
-            }
+            
         }
     }
 
     &__button:hover &__icon::before{
         top: .8rem;
-        @include breakpoint(sm){
-            top: 2.5rem;
-        }
+        
     }
 
     &__button:hover &__icon::after{
         top: -.8rem;
-        @include breakpoint(sm){
-            top: -2.5rem;
-        }
+       
     }
 
     &__checkbox:checked ~ &__background {

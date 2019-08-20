@@ -4,30 +4,38 @@
     position:relative;
     background-image: linear-gradient(to right top, #1a1a1d, #252529, #313136, #3d3d43, #4a4a50);
     .social{
-        
-        @include breakpoint(sm){
             position: absolute;
-            top:115rem;
-            left: 10rem;
             z-index: 3;
-        }
+            top: 480px;
             &__list{
                 list-style-type: none;
+                margin-left: 65px;
+                margin-top: 10px;
             }
             &__item{
                 display: inline-block;
-                margin: 10px;
+                border: 2px solid $tetiary;  
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                vertical-align: middle;
+                padding: 5px;
+                margin: 10px 20px 10px 10px;
+                transition: all .6s;
+                
             }
             &__link{
-                color:$tetiary;
-                @include breakpoint(sm){
-                   font-size: 7rem;
-                   margin-left: 3rem;
-                }
+                color:$tetiary;  
+                font-size:23px;
+                transition: all .6s;
             }
             &__link:hover{
                 color: $tetiary3;
-                transform: scale(1.2);
+                transform: scale(2,2);
+            }
+            &__item:hover{
+                background: $tetiary;
             }
 
     }
