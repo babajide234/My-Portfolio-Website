@@ -11,21 +11,36 @@ body{
     transform: translate(-50%,-50%);
     z-index: 2;
     width: 80%;
+
+    @include respond(phone){
+        width:90%; 
+        text-align: center;
+    }
     .heading{
         font-family: $font1;
-        font-size: 150px;
+        font-size: 12rem;
         text-transform: capitalize;
         line-height: 1;
         color: $secondary;
         text-shadow: 0px 0px 10px $primary;
+        @include respond(phone){
+            font-size: 7rem;
+            padding-left: 2rem;
+        }
         &__main{
             display:block;
-            font-size: 150px;
+            font-size: 12rem;
+            @include respond(phone){
+                font-size: 7.5rem;
+            }
             i{
                 color: $tetiary;
-                font-size: 150px;
+                font-size: 13rem;
                 font-weight: 900;
                 font-style: normal;
+                @include respond(phone){
+                    font-size: 9rem;
+                }
             }
         }
         &__sub{
@@ -35,10 +50,46 @@ body{
     
     .finetext{
             color:$tetiary;
-            font-size: 15px;
+            font-size: 1.1rem;
             font-family: $font1;
             text-transform: capitalize;
             margin: 25px 5px;
-           
+            @include respond(phone){
+                margin-left: 40px;
+            }
+    }
+}
+.sub-header{
+    text-align: center;
+    width: fit-content;
+    margin: 10rem auto;
+    display: block;
+}
+.section-heading{
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: $font1;
+    text-align: center;
+    text-transform: capitalize;
+    background-image:linear-gradient( $tetiary , $tetiary2);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem; 
+    line-height: 1.5;
+    width: fit-content;
+    @include respond(phone){
+        font-size: 4rem;
+
+    }
+
+}
+.spacer{
+    content: " ";
+    display: block;
+    width: 10rem;
+    border-bottom: 5px solid $tetiary2;
+    margin-left: 10rem;
+    @include respond(phone){
+        margin-left:4rem; 
     }
 }
