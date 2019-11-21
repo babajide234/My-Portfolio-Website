@@ -1,16 +1,16 @@
 .header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to right top, #1a1a1d, #252529, #313136, #3d3d43, #4a4a50);
+    background-image: url(../img/fabian-grohs-dMUt0X3f59Q-unsplash.jpg), 
+                      linear-gradient(to right top, #1a1a1d, #252529, #313136, #3d3d43, #4a4a50);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    
     .social{
             position: absolute;
             z-index: 3;
-            top: 480px;
-            @include respond(phone){
-                position: absolute;
-                top: 490px;
-                left: -10px;
-            }
+            top:0;
             &__list{
                 list-style-type: none;
                 margin-left: 65px;

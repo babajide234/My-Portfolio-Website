@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 	<link href="https://fonts.googleapis.com/css?family=B612|Open+Sans|Roboto|Titan+One&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/7abc4a743d.js"></script>
+
 </head>
 <body>
 	<div class="navigation">
@@ -30,34 +31,107 @@
 	</div>
 
 	<header class="header">
-		<div class="text-box">
-			<h1 class="heading">
-				<span class="heading__sub"> hi </span> 
-				<span class="heading__main">i'm <i>jyde</i></span>
-			</h1>
-			<p class="finetext">Web developer / Engineer / hobbiest / entreprenuer  </p>
+		<div class="header__container">
+			<div class="text-box">
+				<h1 class="heading">
+					Hi There, i'm <span>babajide</span>
+				</h1>
+				<i> i'm a fullstack web developer & vue engineer</i>
+				<!-- <div class="social">
+					<ul class="social__list">
+						<li class="social__item"> <a href="" class="social__link"><i class="fab fa-twitter"></i></a> </li>
+						<li class="social__item"> <a href="" class="social__link"><i class="fab fa-github"></i></a> </li>
+						<li class="social__item"> <a href="" class="social__link"><i class="fab fa-codepen"></i></a> </li>
+					</ul>
+				</div> -->
+				<a href="#" class="call-to-action">Contact Me</a>
+			</div>		
 		</div>
-		<div class="social">
-			<ul class="social__list">
-				<li class="social__item"> <a href="" class="social__link"><i class="fab fa-twitter"></i></a> </li>
-				<li class="social__item"> <a href="" class="social__link"><i class="fab fa-github"></i></a> </li>
-				<li class="social__item"> <a href="" class="social__link"><i class="fab fa-codepen"></i></a> </li>
-			</ul>
-		</div>
-
 	</header>
-	<div class="about">
+	<section class="about" id="about">
 		<div class="row">
-			<div class="sub-header">
-				<h1 class="section-heading">about me</h1>
-				<sapn class="spacer"></sapn>
+			<div class="col-1-of-2 ">
+				<img src="./img/markus-spiske-s7nlaF3kefg-unsplash.jpg" class="bg_img" alt="">
 			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis debitis omnis delectus nobis 
-				laudantium sed voluptas aliquam ut, sint vitae illo, quo minima, dignissimos dolorem adipisci labore asperiores 
-				voluptatibus!</p>
+			<div class="col-1-of-2">
+				<h2 class="sub_header">about me</h2>
+				<p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi veritatis ratione rem quod! Odio 
+					reprehenderit eum libero nam error incidunt modi nemo dignissimos? Porro ratione ducimus voluptatum alias delectus.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi veritatis ratione rem quod! Odio 
+					reprehenderit eum libero nam error incidunt modi nemo dignissimos? Porro ratione ducimus voluptatum alias delectus.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi veritatis ratione rem quod! Odio 
+					reprehenderit eum libero nam error incidunt modi nemo dignissimos? Porro ratione ducimus voluptatum alias delectus.
+				</p>
+				<div class="social__links">
+					<a href=""><i class="fas fa-twitter"></i></a>
+					<a href=""><i class="fas fa-codepen"></i></a>
+					<a href=""><i class="fas fa-linkden"></i></a>
+				</div>
+				<a href="" class="call-to-action-mini">Hire me</a>
+				
+			</div>
 		</div>
-		
-	</div>	
+	</section>
+
+	<section class="skills" id="about">
+		<div class="row">
+			<h2 class="heading-secondary">Skills</h2>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="row">
+			<div class="col-1-of-3">
+			<div class="card">
+				<div class="card__img"></div>
+				<div class="card__content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
+						Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-1-of-3">
+					<div class="card">
+						<div class="card__img"></div>
+						<div class="card__content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
+								Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
+						</div>
+					</div>
+			</div>
+			<div class="col-1-of-3">
+				<div class="card">
+					<div class="card__img"></div>
+						<div class="card__content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
+							Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="about">
+		<div class="row">
+				<div class="project__card">
+					<div class="project__card__content">
+						<a href="" class="code">code</a>
+						<a href="" class="view">view</a>
+						<div class="project__card__description">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione illum maiores distinctio magnam dignissimos maxime ex vitae nam nihil.
+								 Omnis tempora similique quas excepturi in modi dolor pariatur aliquid architecto.</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<section class="contact" id="about">
+		<div class="row">
+			<h2 class="heading-secondary">Contact</h2>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+	</footer>
 	<div id="particles-js"></div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

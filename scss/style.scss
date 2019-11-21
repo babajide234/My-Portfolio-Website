@@ -1,11 +1,14 @@
 
 @import "./abstracts/variable";
 @import "./abstracts/mixin";
+@import "./abstracts/utilitys";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/particle";
+@import "./components/image";
+@import "./components/buttons";
 
 @import "./layout/header";
 @import "./layout/navigation";

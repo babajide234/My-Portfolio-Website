@@ -1,0 +1,14 @@
+.about{
+    &__img{
+        width: 14%;
+        border-radius:50%;
+        &::after{
+            content: " ";
+            width: 50px;
+            background-color: cyan;
+            border: 1px solid black;
+            position: absolute;
+            top:0;
+        }
+    }
+}

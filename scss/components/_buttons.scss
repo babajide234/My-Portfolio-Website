@@ -1,0 +1,48 @@
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:$tetiary ;
+
+    margin: 30px auto;
+    border: 1px solid $tetiary;
+    width:200px;
+    height:50px ;
+    text-align: center;
+    border-radius: 40px;
+    transition:all .6s;
+    
+}
+.call-to-action:hover{
+    border-radius: 2px;
+    background-color: $tetiary;
+    color:$color-white;
+    
+    transition:all .6s;
+}
+.call-to-action-mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:$tetiary ;
+    font-size: .9rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-top: 40px;
+    border: 1px solid $tetiary;
+    width:130px;
+    height:40px ;
+    border-radius: 40px;
+    
+}
+
+.call-to-action-mini:hover{
+    border-radius: 2px;
+    background-color: $tetiary;
+    color:$color-white;  
+    transition:all .6s;
+}
