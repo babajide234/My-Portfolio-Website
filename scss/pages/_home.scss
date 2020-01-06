@@ -1,10 +1,36 @@
-section{
-height: 100vh;
-padding:10rem; 
-}
+
 
 .bg_img{
     width: 100%;
     height:80vh;
 }
-
+section{
+    max-width:$section-width;
+    margin: 0px auto;
+    margin-top: 15rem;    
+}
+#about{
+    position: relative;
+    //height: 100vh;
+}
+.about-img{
+    width: $img-w;
+    height: $img-h;
+    border: 15px solid $bg-color;
+    position: absolute;
+    top: 0;
+    left:30px;
+    z-index: 1000;
+    
+    &__border{
+        position: absolute;
+        top:30px;
+        left: 0;
+        z-index: 10;
+        display: block;
+        width:$img-w;
+        height: $img-h;
+        background-color: $bg-color;
+        border: 15px solid $primary-color;
+    }
+}
