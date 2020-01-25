@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 	<link href="https://fonts.googleapis.com/css?family=B612|Open+Sans|Roboto|Titan+One&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/7abc4a743d.js"></script>
-
+	<link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="./vendor/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" href="./vendor/devicons/css/devicons.css">
 </head>
 <body>
 	<div class="navigation">
@@ -75,67 +77,91 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="skills" id="about">
+<!-- 
+	<section class="skills" id="skills">
 		<div class="row">
 			<h2 class="heading-secondary">Skills</h2>
 		</div>
 	</section>
-	<section class="services" id="services">
+	 -->
+	<section class="portfolio" id="portfolio">
 		<div class="row">
-			<div class="col-1-of-3">
-			<div class="card">
-				<div class="card__img"></div>
-				<div class="card__content">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
-						Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
-				</div>
+			<div class="portfolio__heading">
+				<h2 class="sub-heading">My Work</h2>
+				<ul class="portfolio__menu">
+					<li class="portfolio__menu__item"><a href="">ALL</a></li>
+					<li class="portfolio__menu__item"><a href="">Javascript</a></li>
+					<li class="portfolio__menu__item"><a href="">Vue</a></li>
+					<li class="portfolio__menu__item"><a href="">React</a></li>
+					<li class="portfolio__menu__item"><a href="">Node Js</a></li>
+					<li class="portfolio__menu__item"><a href="">Php</a></li>
+				</ul>
 			</div>
+			<div class="portfolio__container">
+				<ul class="portfolio__list">
+					<li class="portfolio__list__item">
+						<h3 class="">Project Name</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis illo corporis labore in ratione..</p>
+						<a href="" class="circle circle__active"><i class="fa fa-eye"></i></a>
+						<a href="" class="circle circle__active"><i class="fa fa-code"></i></a>
+					</li>
+					<li class="portfolio__list__item">
+						<h3 class="">Project Name</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis illo corporis labore in ratione..</p>
+						<a href="" class="circle circle__active"><i class="fa fa-eye"></i></a>
+						<a href="" class="circle circle__active"><i class="fa fa-code"></i></a>
+					</li>
+					<li class="portfolio__list__item">
+						<h3 class="">Project Name</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis illo corporis labore in ratione..</p>
+						<a href="" class="circle circle__active"><i class="fa fa-eye"></i></a>
+						<a href="" class="circle circle__active"><i class="fa fa-code"></i></a>
+					</li>
+					<li class="portfolio__list__item">
+						<h3 class="">Project Name</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis illo corporis labore in ratione..</p>
+						<a href="" class="circle circle__active"><i class="fa fa-eye"></i></a>
+						<a href="" class="circle circle__active"><i class="fa fa-code"></i></a>
+					</li>
+				</ul>
 			</div>
-			<div class="col-1-of-3">
-					<div class="card">
-						<div class="card__img"></div>
-						<div class="card__content">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
-								Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
-						</div>
-					</div>
-			</div>
-			<div class="col-1-of-3">
-				<div class="card">
-					<div class="card__img"></div>
-						<div class="card__content">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit aperiam cupiditate voluptatum dicta corporis. 
-							Mollitia, numquam ipsa vitae commodi saepe repudiandae adipisci nulla fugit dignissimos non tempora illo omnis.</p>
-						</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="portfolio" id="about">
-		<div class="row">
-				<div class="project__card">
-					<div class="project__card__content">
-						<a href="" class="code">code</a>
-						<a href="" class="view">view</a>
-						<div class="project__card__description">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione illum maiores distinctio magnam dignissimos maxime ex vitae nam nihil.
-								 Omnis tempora similique quas excepturi in modi dolor pariatur aliquid architecto.</p>
-						</div>
-					</div>
-				</div>
 		</div>
 	</section>
 
-	<section class="contact" id="about">
+	<section class="contact" id="contact">
 		<div class="row">
 			<h2 class="heading-secondary">Contact</h2>
+		</div>
+		<div class="row">
+			<div class="col-1-of-2">
+				<div class="contacts">	
+					<h3><i class="fa fa-location"></i> address</h3>
+					<p></p>
+					<h3><i class="fa fa-phone"></i> Phone</h3>
+					<p>09055548937 , 08135298896</p>
+					<h3><i class="fa fa-email"></i>email</h3>
+					<p>babajide234@gmail</p>
+				</div>
+			</div>
+			<div class="col-1-of-2 form">
+				<form action="" method="post">
+					<input type="text" placeholder="Name" class="form-input">
+					<input type="text" placeholder="Phone" class="form-input">
+					<input type="text" placeholder="Email" class="form-input">
+					<textarea name="Message" id="Message" cols="30" rows="10" class="form-input textarea"></textarea>
+					<a type="submit" class="btn btn__active">Submit</a>
+				</form>
+			</div>
+			
 		</div>
 	</section>
 
 	<footer class="footer">
-
+		<div class="row">
+			<div class="col-1-of-3"></div>
+			<div class="col-1-of-3"></div>
+			<div class="col-1-of-3"></div>
+		</div>
 	</footer>
 	<div id="particles-js"></div>
 	
