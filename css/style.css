@@ -86,21 +86,11 @@ a {
   display: block;
   width: fit-content;
   margin: 0px auto;
-  position: relative; }
-  .sub-heading::after, .sub-heading::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #d41636;
-    height: 3px;
-    width: 150px;
-    margin: 0;
-    padding: 0; }
-  .sub-heading::after {
-    top: 8rem;
-    left: 13rem; }
-  .sub-heading::before {
-    top: 1rem; }
+  position: relative;
+  color: rgba(60, 60, 61, 0.602); }
+  @media only screen and (max-width: 37.5em) {
+    .sub-heading {
+      font-size: 3.5rem; } }
 
 .sub-text {
   margin: 30px 10px;
@@ -182,6 +172,12 @@ a {
   margin: 0px 10px;
   margin-right: 10px;
   letter-spacing: 2px; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      letter-spacing: 0;
+      font-size: 11px;
+      margin-right: 0;
+      padding: 10px 20px; } }
   .btn__active {
     background-color: #d41636; }
   .btn__normal {
@@ -481,6 +477,15 @@ a {
   top: 0;
   left: 30px;
   z-index: 1000; }
+  @media only screen and (max-width: 37.5em) {
+    .about-img {
+      width: 250px;
+      height: 300px;
+      left: 20px; } }
+  @media only screen and (max-width: 75em) {
+    .about-img {
+      width: 350px;
+      height: 400px; } }
   .about-img__border {
     position: absolute;
     top: 30px;
@@ -491,16 +496,17 @@ a {
     height: 400px;
     background-color: white;
     border: 15px solid #d41636; }
+    @media only screen and (max-width: 37.5em) {
+      .about-img__border {
+        width: 250px;
+        height: 300px;
+        left: -10px; } }
 
 .portfolio__heading {
   width: 100%;
   margin-bottom: 4rem;
   margin-top: 4rem;
   text-align: center; }
-  .portfolio__heading h2 {
-    font-size: 6rem;
-    width: fit-content;
-    margin: 0 auto; }
 
 .portfolio__menu {
   line-height: 5.2rem; }
@@ -542,10 +548,8 @@ a {
 .contact {
   padding-bottom: 5rem; }
   .contact h2 {
-    text-align: center;
-    color: #ffffff;
-    margin: 0 auto;
-    margin-top: 60px; }
+    margin-top: 3rem;
+    color: rgba(76, 76, 78, 0.45); }
 
 .form {
   position: relative; }
