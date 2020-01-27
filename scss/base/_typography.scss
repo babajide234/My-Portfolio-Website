@@ -62,12 +62,28 @@ a{
 
 .sub-heading{
     font-size: 5rem;
-    &::after{
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    position: relative;
+    &::after,
+    &::before{
         content: "";
         display: block;
-        height: 3px ;
-        width: 100px;
+        position: absolute;
         background-color: $primary-color;
+        height: 3px ;
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    &::after{
+        top: 8rem;
+        left: 13rem;
+    }
+    &::before{
+        top: 1rem;
+
     }
 }
 

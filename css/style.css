@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -82,13 +82,25 @@ a {
   text-align: justify; }
 
 .sub-heading {
-  font-size: 5rem; }
-  .sub-heading::after {
+  font-size: 5rem;
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+  position: relative; }
+  .sub-heading::after, .sub-heading::before {
     content: "";
     display: block;
+    position: absolute;
+    background-color: #d41636;
     height: 3px;
-    width: 100px;
-    background-color: #d41636; }
+    width: 150px;
+    margin: 0;
+    padding: 0; }
+  .sub-heading::after {
+    top: 8rem;
+    left: 13rem; }
+  .sub-heading::before {
+    top: 1rem; }
 
 .sub-text {
   margin: 30px 10px;
@@ -231,6 +243,26 @@ a {
   .contacts p {
     color: #505052;
     font-size: 1.2rem; }
+
+.social {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 4rem; }
+  .social__list {
+    list-style: none; }
+  .social__item {
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 1px solid #d41636;
+    padding: 3px 15px;
+    border-radius: 3px;
+    transition: all .4s; }
+    .social__item:not(:last-child) {
+      margin-right: 2rem; }
+    .social__item:hover {
+      cursor: pointer;
+      background: #d41636; }
 
 .header {
   height: 100vh;
@@ -483,26 +515,29 @@ a {
   width: 100%; }
 
 .portfolio__list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  list-style: none; }
   .portfolio__list__item {
-    width: 48%;
+    position: relative;
     margin-bottom: 3rem;
     height: 25rem;
     background: linear-gradient(#c3073f, #950740);
     padding-left: 4rem;
     padding-right: 4rem; }
+    .portfolio__list__item h3, .portfolio__list__item p {
+      position: absolute; }
     .portfolio__list__item h3 {
       font-size: 2rem;
       color: #ffffff;
-      margin-top: 13rem; }
+      top: 13rem; }
     .portfolio__list__item p {
       font-size: 11px;
       color: #ffffff;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      top: 16rem; }
+
+.portfolio__code {
+  position: absolute;
+  top: 20rem; }
 
 .contact {
   padding-bottom: 5rem; }
@@ -526,5 +561,10 @@ a {
     background: #505052; }
 
 footer {
-  background: #151516;
-  height: 15rem; }
+  background: #151516; }
+  footer p {
+    display: block;
+    width: fit-content;
+    margin: 4rem auto;
+    font-size: 1.2rem;
+    color: #505052; }

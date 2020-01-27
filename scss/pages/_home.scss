@@ -72,32 +72,33 @@
     }
     &__list{
         list-style: none;
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        justify-content:space-between;
         &__item{
-            width:48%;
+            position: relative;
             margin-bottom: 3rem;
             height: 25rem;
             background: linear-gradient($tetiary, $tetiary2 ),  ;
             padding-left: 4rem;
             padding-right: 4rem;
-            // background-image:  url('../img/lyceum_full.jpg') ;
-            // background-blend-mode: overlay;
-            // background-size: cover;
-
+            h3,p{
+                position: absolute;
+                
+            }
             h3{
                 font-size: 2rem;
                 color: $color-white;
-                margin-top: 13rem;
+                top: 13rem;
             }
             p{
                 font-size: 11px;
                 color: $color-white;
                 margin-bottom: 1rem;
+                top: 16rem;
             }
         }
+    }
+    &__code{
+        position: absolute;
+        top: 20rem;
     }
 }
 .contact{
@@ -130,5 +131,11 @@
 
 footer{
     background: rgb(21, 21, 22);
-    height: 15rem;
+    p{
+        display: block;
+        width: fit-content;
+        margin: 4rem auto;
+        font-size: 1.2rem;
+        color:rgb(80, 80, 82);
+    }
 }
