@@ -35,7 +35,7 @@
     position: relative;
     top: 0;
     left:6rem;
-    z-index: 1000;
+    z-index: 500;
     @include respond(phone) {
         width:22rem;
         height: 30rem;
