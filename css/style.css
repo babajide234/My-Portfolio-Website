@@ -435,9 +435,6 @@ a {
     @media only screen and (max-width: 52.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
-  @media only screen and (max-width: 52.25em) {
-    .row {
-      max-width: 50rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
@@ -459,6 +456,14 @@ a {
 #portfolio {
   max-width: 70%;
   margin: 0px auto; }
+  @media only screen and (max-width: 37.5em) {
+    #about,
+    #portfolio {
+      max-width: 95%; } }
+  @media only screen and (max-width: 75em) {
+    #about,
+    #portfolio {
+      max-width: 95%; } }
 
 #about {
   position: relative;
@@ -470,37 +475,35 @@ a {
   background: #0b0b0c; }
 
 .about-img {
-  width: 350px;
-  height: 400px;
+  width: 35rem;
+  height: 40rem;
   border: 15px solid white;
   position: relative;
   top: 0;
-  left: 30px;
+  left: 6rem;
   z-index: 1000; }
   @media only screen and (max-width: 37.5em) {
     .about-img {
-      width: 250px;
-      height: 300px;
-      left: 20px; } }
-  @media only screen and (max-width: 75em) {
-    .about-img {
-      width: 350px;
-      height: 400px; } }
+      width: 22rem;
+      height: 30rem;
+      top: 0;
+      left: 5rem; } }
   .about-img__border {
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 3.5rem;
     z-index: 10;
     display: block;
-    width: 350px;
-    height: 400px;
+    width: 35rem;
+    height: 40rem;
     background-color: white;
     border: 15px solid #d41636; }
     @media only screen and (max-width: 37.5em) {
       .about-img__border {
-        width: 250px;
-        height: 300px;
-        left: -10px; } }
+        width: 22rem;
+        height: 30rem;
+        top: 3rem;
+        left: 3rem; } }
 
 .portfolio__heading {
   width: 100%;
