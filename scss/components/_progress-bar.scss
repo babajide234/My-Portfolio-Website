@@ -1,0 +1,113 @@
+.progress-wrap {
+    width: 70%;
+    margin: 0 auto;
+    i{
+        font-size: 36px;
+    }
+}
+.progress{
+    height: 20px;
+    box-shadow: none;
+    background: #cfd0d1;
+    overflow: visible;
+    margin-bottom: 20px;
+    p{
+        font-size: 11px;
+        position: absolute;
+        bottom: -18px;
+        right: 0;
+        text-transform: capitalize;
+    }
+    &__bar{
+        float: left;
+        width:60%;
+        height: 100%;
+        transition: width 0.6s ease;
+        box-shadow: none;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #000;
+        font-weight: 600;
+        text-align: right;
+        position: relative;
+        overflow: visible;
+       
+        &::after{
+            position: absolute;
+            top: -5.5px;
+            right: -8px;
+            width: 30px;
+            height: 30px;
+            content: '';
+            border-radius: 50%;
+        }
+
+        span{
+            position: absolute;
+            top: -22px;
+            right: 0;
+        }
+    }
+}
+
+
+.color-1 {
+    background: #6b139e;
+}
+.color-2 {
+    background: #ec5453;
+}
+.color-3 {
+    background: #ec5393;
+}
+.color-4 {
+    background: #53ec93;
+}
+.color-5 {
+    background: #e9ec53;
+}
+.color-6 {
+    background: #53c1ec;
+}
+
+
+.color-1 span {
+    color: #6b139e;
+}
+.color-2 span {
+    color: #ec5453;
+}
+.color-3 span {
+    color: #ec5393;
+}
+.color-4 span {
+    color: #53ec93;
+}
+.color-5 span {
+    color: #e9ec53;
+}
+.color-6 span {
+    color: #53c1ec;
+}
+
+
+.color-1::after {
+    background: #6b139e;
+}
+.color-2::after {
+    background: #ec5453;
+}
+.color-3::after {
+    background: #ec5393;
+}
+.color-4::after {
+    background: #53ec93;
+}
+.color-5::after {
+    background: #e9ec53;
+}
+.color-6::after {
+    background: #53c1ec;
+}
+
+

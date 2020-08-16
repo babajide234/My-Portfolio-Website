@@ -5,7 +5,8 @@
     height:80vh;
 }
 #about,
-#portfolio{
+#portfolio,
+#skills{
     max-width:$section-width;
     margin: 0px auto;
     @include respond(phone){
@@ -68,59 +69,6 @@
     }
 }
 
-.portfolio{
-    &__heading{
-        width: 100%;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
-        text-align: center;
-        
-    }
-    &__menu{
-        line-height: 5.2rem;
-        &__item{
-            list-style-type: none;
-            display: inline-block;
-            margin-right: 10px;
-            a{
-                color: rgb(11,12,30);
-            }
-        }   
-    }
-    &__container{
-        width: 100%;
-    }
-    &__list{
-        list-style: none;
-        &__item{
-            position: relative;
-            margin-bottom: 3rem;
-            height: 25rem;
-            background: linear-gradient($tetiary, $tetiary2 ),  ;
-            padding-left: 4rem;
-            padding-right: 4rem;
-            h3,p{
-                position: absolute;
-                
-            }
-            h3{
-                font-size: 2rem;
-                color: $color-white;
-                top: 13rem;
-            }
-            p{
-                font-size: 11px;
-                color: $color-white;
-                margin-bottom: 1rem;
-                top: 16rem;
-            }
-        }
-    }
-    &__code{
-        position: absolute;
-        top: 20rem;
-    }
-}
 .contact{
     padding-bottom: 5rem;
     h2{
@@ -145,7 +93,21 @@
 
     }
 }
+.skills{
+    &__heading{
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        text-align: center;
+    }
 
+    &__item{
+        position: relative;
+        font-size: 3.5rem;
+        color: $primary-color;
+       
+    }
+}
 footer{
     background: rgb(21, 21, 22);
     p{
