@@ -261,13 +261,13 @@ a {
       background: #d41636; }
 
 .progress-wrap {
-  width: 70%;
+  width: 90%;
   margin: 0 auto; }
   .progress-wrap i {
-    font-size: 36px; }
+    font-size: 45px; }
 
 .progress {
-  height: 20px;
+  height: 10px;
   box-shadow: none;
   background: #cfd0d1;
   overflow: visible;
@@ -293,10 +293,10 @@ a {
     overflow: visible; }
     .progress__bar::after {
       position: absolute;
-      top: -5.5px;
+      top: -2.3px;
       right: -8px;
-      width: 30px;
-      height: 30px;
+      width: 15px;
+      height: 15px;
       content: '';
       border-radius: 50%; }
     .progress__bar span {
@@ -394,6 +394,7 @@ a {
   background-position: center;
   border-radius: 3px;
   overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   position: relative; }
   .portfolio__item::after {
     content: '';

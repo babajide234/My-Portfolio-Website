@@ -1,12 +1,12 @@
 .progress-wrap {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     i{
-        font-size: 36px;
+        font-size: 45px;
     }
 }
 .progress{
-    height: 20px;
+    height: 10px;
     box-shadow: none;
     background: #cfd0d1;
     overflow: visible;
@@ -34,10 +34,10 @@
        
         &::after{
             position: absolute;
-            top: -5.5px;
+            top: -2.3px;
             right: -8px;
-            width: 30px;
-            height: 30px;
+            width: 15px;
+            height: 15px;
             content: '';
             border-radius: 50%;
         }
