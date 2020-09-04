@@ -9,7 +9,7 @@
   "author": "babajide tomoshegbo",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "graphql": "^14.4.2",
